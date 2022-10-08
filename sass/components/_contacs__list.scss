@@ -1,0 +1,54 @@
+.contacs__list {
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 30px;
+  }
+}
+
+.contacs__link {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.02em;
+
+    color: var(--primary-text-color);
+
+    transition: color var(--transition-duration);
+
+    &:hover,
+    &:focus {
+      color: var(--accent-color);
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    gap: 10px;
+
+    padding-top: 32px;
+    padding-bottom: 32px;
+
+    font-size: 14px;
+    line-height: 1.14;
+  }
+}
+
+.contacs__icon {
+  fill: currentColor;
+}

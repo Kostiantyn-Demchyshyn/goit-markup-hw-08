@@ -1,0 +1,46 @@
+/* rest */
+html {
+  box-sizing: border-box;
+}
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+/* Стилі для обнулення верхніх відступів у елементів  Стили для обнуления */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+/* Класс для обнулення базових свойств у списків (ul) */
+.list {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+/* Клас для обнулення базових свойств у силок */
+.link {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Властивості для коректного відображення картинок */
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* Властивості для обнулення курсива у address */
+
+address {
+  font-style: normal;
+}
