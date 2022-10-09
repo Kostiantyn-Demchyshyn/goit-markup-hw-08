@@ -741,7 +741,7 @@ address {
           flex-direction: column;
   top: 0;
   left: 0;
-  padding: 20px 15px;
+  padding: 35px 15px;
   width: 100%;
   height: 100%;
   background-color: #ffffff;
@@ -785,6 +785,9 @@ address {
   color: var(--secondary-text-color);
   -webkit-transition: color var(--transition-duration);
   transition: color var(--transition-duration);
+}
+.mobile-navigation__link-active {
+  color: var(--accent-color);
 }
 .mobile-navigation__link:hover, .mobile-navigation__link:focus {
   color: var(--accent-color);
@@ -964,6 +967,7 @@ address {
 }
 @media screen and (min-width: 1200px) {
   .hero {
+    max-width: 1600px;
     height: 600px;
     padding-top: 200px;
     padding-bottom: 200px;
@@ -1201,6 +1205,11 @@ address {
 }
 .customers__icon {
   fill: currentColor;
+}
+@media screen and (min-width: 480px) {
+  .customers__link {
+    width: 210px;
+  }
 }
 @media screen and (min-width: 768px) {
   .customers__link {
